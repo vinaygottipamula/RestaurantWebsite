@@ -131,7 +131,7 @@ header{
 .hero-btn a:first-child:hover,
 .hero-btn a:last-child:hover{
     background: var(--main-color);
-    border: none;
+    border-color: var(--main-color);
 }
 .hero-btn a:last-child{
     color: #fff;
@@ -149,6 +149,7 @@ header{
     width: 80%;
     margin: auto;
     display: grid;
-    grid-template-columns: 45% 55%;
+    grid-template-columns: 55% 45%;
     grid-gap: 10rem;
+    padding-top: 1rem;
 }
