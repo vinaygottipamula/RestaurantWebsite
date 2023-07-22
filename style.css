@@ -321,14 +321,42 @@ section{
     display: none;
 }
 
+#sm-menu-toggle:checked ~ .sm-menu{
+    right: 0;
+}
+
 .sm-menu{
     height: 100%;
-    width: 400px;
+    width: 270px;
     background: var(--sec-color);
     position: fixed;
-    right: 0;
+    right: -270px;
     top: 0;
     z-index: 100;
+    padding: 1rem;
+    transition: right 350ms;
+}
+
+.sm-menu label{
+    display: block;
+    text-align: right;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+.sm-menu li{
+    margin-bottom: .6rem;
+}
+
+.sm-menu a{
+    font-size: 1.05rem;
+    color:#fff;
+    font-weight: 500;
+}
+
+.sm-menu a:hover{
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #fff;
 }
 
 @media only screen and (max-width:1200px){
